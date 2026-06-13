@@ -173,7 +173,14 @@ export default function Portfolio() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 40, background: "rgba(11,15,26,0.85)", backdropFilter: "blur(12px)", borderBottom: "1px solid #1A2235" }}>
         <div style={{ maxWidth: 960, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 56 }}>
           <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16, color: "#F1F5F9", letterSpacing: "-0.01em" }}>
-            Jyothsna<span style={{ color: "#7F77DD" }}>.</span>
+          <img
+            src="/logo.png"
+            alt="PJ Logo"
+            style={{
+              height: "42px",
+              width: "auto"
+            }}
+          />
           </span>
           <div style={{ display: "flex", gap: 2, alignItems: "center" }} className="desktop-nav">
             {NAV_LINKS.map((l) => (
@@ -473,12 +480,28 @@ export default function Portfolio() {
           ))}
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 40 }}>
-          {[
-            { icon: "💼", label: "LinkedIn", url: "https://www.linkedin.com/in/jyothsna6125" },
-            { icon: "🐙", label: "GitHub", url: "https://github.com/DareToCrack" },
-          ].map((s) => (
+        {[
+          {
+            icon: "/linkedin.png",
+            label: "LinkedIn",
+            url: "https://www.linkedin.com/in/jyothsna6125",
+          },
+          {
+            icon: "/github.png",
+            label: "GitHub",
+            url: "https://github.com/DareToCrack",
+          },
+        ].map((s) => (
             <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="social-link">
-              <span style={{ fontSize: 20 }}>{s.icon}</span>
+              <img
+                src={s.icon}
+                alt={s.label}
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  objectFit: "contain"
+                }}
+              />
               <span>{s.label}</span>
               <span style={{ marginLeft: "auto", color: "#64748B", fontSize: 12 }}>↗</span>
             </a>
