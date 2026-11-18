@@ -1,16 +1,27 @@
-# React + Vite
+# Potta Jyothsna — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Potta Jyothsna, cybersecurity student (CEH- and
+CLLMSE-certified) specializing in VAPT and AI/LLM security.
 
-Currently, two official plugins are available:
+Live site: https://pottajyothsna.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's inside
 
-## React Compiler
+A single self-contained `index.html` — no build step needed. It includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero with open-to-internships status, certifications (CEH, CLLMSE), CGPA 8.5
+- Projects: LLMGuardian (RedVector AI), CloudGuard, NetWorkLearn,
+  CampusSaathi-AI, Web Application Analyzer, SoterCTF Writeups
+- Skills, experience, certifications, CTFs, education, and contact
+- Downloadable resume (embedded in the page)
 
-## Expanding the ESLint configuration
+## Links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- LinkedIn: https://www.linkedin.com/in/jyothsna6125/
+- GitHub: https://github.com/DareToCrack
+- Email: pottajyothsna@gmail.com
+
+## Note
+
+The previous React/Vite source remains in `src/` for reference; the live page
+is the static `index.html` at the repo root.
