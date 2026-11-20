@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="color-scheme" content="dark"/>
-<meta name="theme-color" content="#0b0810"/>
+<meta name="theme-color" content="#020604"/>
 <meta name="description" content="Potta Jyothsna — CEH & CLLMSE certified cybersecurity student. Builder of SecureShare, PhishSim, LLMGuardian and CloudGuard. B.Tech CSE (Cyber Security), Parul University, CGPA 8.5, graduating April 2027. VAPT, encrypted file sharing, phishing simulation & AI / LLM security."/>
 <link rel="icon" href="data:,"/>
 <title>Potta Jyothsna — Cybersecurity Portfolio</title>
@@ -310,6 +310,71 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   body::before{animation:none}
 }
 </style>
+<style>
+/* ============================================================
+   MATRIX THEME — deep black-green, signal green, lime accent.
+   "Professionally classy": soft glows replace hard offset
+   shadows, display type goes monospace like the reference,
+   and the digital rain lives only inside the hero window,
+   dimmed behind the text so everything stays readable.
+   All content, layout and behaviour are unchanged.
+   ============================================================ */
+:root{
+  --bg:#020604; --bg2:#03130a; --card:#05130b; --card2:#071a0f;
+  --ink:#eafff2; --ink2:#d3efdd; --muted:#93bda6; --muted2:#739a85;
+  --rose:#2ee06f; --rose-d:#57f78f; --rose-light:#93f7ba; --rose-soft:rgba(46,224,111,.16); --rose-pale:#07240f;
+  --gold:#b7e26b; --gold-light:#dcf7a8; --mint:#63f2a6;
+  --line:#1e4d31; --line-soft:#123420;
+  --shadow:0 24px 60px rgba(0,0,0,.6),0 0 46px rgba(46,224,111,.07);
+  --shadow-sm:0 12px 30px rgba(0,0,0,.5),0 0 22px rgba(46,224,111,.05);
+  --shadow-rose:0 18px 44px rgba(0,0,0,.55),0 0 34px rgba(46,224,111,.16);
+}
+::selection{background:var(--rose);color:#02140a}
+/* Ambient background: green dot grid + soft signal glows */
+body{background:#020604;background-image:radial-gradient(rgba(46,224,111,.10) 1px,transparent 1px),radial-gradient(ellipse 900px 420px at 85% -60px,rgba(46,224,111,.10),transparent 65%),radial-gradient(ellipse 700px 380px at 0% 30%,rgba(183,226,107,.05),transparent 60%)}
+body::before{background:linear-gradient(rgba(46,224,111,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(46,224,111,.05) 1px,transparent 1px);background-size:56px 56px}
+body::after{background:radial-gradient(ellipse 620px 300px at 88% 12%,rgba(183,226,107,.05),transparent 65%),radial-gradient(ellipse 520px 300px at 6% 62%,rgba(46,224,111,.05),transparent 65%)}
+/* Display type: monospace, like the reference — composed sizes */
+h1,h2{font-family:"IBM Plex Mono",monospace;font-weight:700}
+h1{letter-spacing:-.01em}
+h1 .dot-end{text-shadow:0 0 22px rgba(46,224,111,.6)}
+h2{line-height:1.14}
+.serif-i,.hero-name-sub,.mono-big em,.cert-hero h3 em{font-family:"IBM Plex Mono",monospace;font-style:normal}
+.hero-name-sub{letter-spacing:.02em;font-size:clamp(15px,2vw,19px);color:var(--rose-light)}
+.mono-big{font-family:"IBM Plex Mono",monospace;letter-spacing:-.02em}
+.mono-big em{font-size:25px;color:var(--gold-light)}
+h2 .serif-i{color:var(--rose-d)}
+/* Bright-green buttons carry near-black text, as in the reference */
+.btn-dark,.btn-submit{color:#02140a}
+.btn-dark:hover,.btn-submit:hover{background:#25b95c}
+.nav-cta{color:#02140a!important}
+.nav-cta:hover{background:#25b95c!important}
+.chip-btn.active,.tag.new{color:#02140a}
+.btn-dark{box-shadow:0 8px 22px rgba(46,224,111,.22)}
+.btn-dark:hover{box-shadow:0 10px 26px rgba(46,224,111,.32)}
+.chip-btn.active{box-shadow:0 6px 18px rgba(46,224,111,.25)}
+/* Nav & windows */
+.nav-in{box-shadow:0 14px 34px rgba(0,0,0,.55),0 0 24px rgba(46,224,111,.08)}
+.nav b .sq{animation:none;box-shadow:0 0 10px rgba(46,224,111,.75)}
+.win{box-shadow:var(--shadow)}
+.win-bar{position:relative;z-index:1;background:#020a05}
+/* Marquee strip: signal green with near-black type */
+.marquee{color:#02140a;border-top-color:#8ff5b6}
+/* Leftover rose-tinted borders/glows, recoloured */
+.facts{border-color:rgba(46,224,111,.4)}
+.cert-hero{border-color:rgba(46,224,111,.5);background:linear-gradient(150deg,#0a2a16,#04140a)}
+.profile-body{background:linear-gradient(165deg,#0a2413 0%,#061708 55%,#020604 100%)}
+.t-item::before{box-shadow:0 0 0 2px var(--rose),0 0 12px rgba(46,224,111,.6)}
+.card:hover{border-color:rgba(46,224,111,.55)}
+.stat-card:hover,.cert:hover{border-color:rgba(46,224,111,.45)}
+.t-item:hover{border-color:rgba(46,224,111,.45)}
+.direct a:hover{border-color:rgba(46,224,111,.5)}
+.skill-row h3{border-color:rgba(183,226,107,.35)}
+/* Terminal + hero rain */
+.term{border-color:rgba(99,242,166,.4);background:#020a05;box-shadow:4px 4px 0 rgba(0,0,0,.6),inset 0 0 30px rgba(46,224,111,.05)}
+.matrix-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.5;pointer-events:none}
+.win-body{background:linear-gradient(180deg,rgba(2,8,5,.42),rgba(2,8,5,.62))}
+</style>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
@@ -318,6 +383,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <div class="hero"><div class="wrap">
 <div class="hero-grid">
 <div class="win">
+<canvas class="matrix-canvas" id="matrixRain" aria-hidden="true"></canvas>
 <div class="win-scan" aria-hidden="true"></div>
 <div class="win-bar"><span class="win-dots"><i></i><i></i><i></i></span><span>SYS_INIT // PORTFOLIO — <span class="live">● SECURE</span></span></div>
 <div class="win-body">
@@ -539,7 +605,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 </form>
 </div></div></section>
 </main>
-<footer><div class="wrap"><span class="f-name">Potta Jyothsna</span> · Cybersecurity — VAPT, Phishing Simulation &amp; AI/LLM Security · Parul University &rsquo;27 · <a href="https://github.com/DareToCrack" target="_blank" rel="noopener">GitHub — DareToCrack</a> · <a href="https://pottajyothsna.vercel.app/" target="_blank" rel="noopener">Live portfolio on Vercel</a> · Last synced with GitHub 20 Nov 2026 — SecureShare added as the newest project; dark hacker theme confirmed as the chosen design. ✦ Every claim on this page maps to a project, certification, or experience listed above.</div></footer>
+<footer><div class="wrap"><span class="f-name">Potta Jyothsna</span> · Cybersecurity — VAPT, Phishing Simulation &amp; AI/LLM Security · Parul University &rsquo;27 · <a href="https://github.com/DareToCrack" target="_blank" rel="noopener">GitHub — DareToCrack</a> · <a href="https://pottajyothsna.vercel.app/" target="_blank" rel="noopener">Live portfolio on Vercel</a> · Last synced with GitHub 20 Nov 2026 — SecureShare added as the newest project; Matrix green theme — professionally classy hacker styling. ✦ Every claim on this page maps to a project, certification, or experience listed above.</div></footer>
 <div class="toast" id="toast">Email copied — pottajyothsna@gmail.com</div>
 <script>
 document.querySelectorAll('.chip-btn').forEach(function(b){b.addEventListener('click',function(){
@@ -635,6 +701,68 @@ document.getElementById('hireForm').addEventListener('submit',function(e){
       }
     }
     timer = setTimeout(function(){ deleting = true; tick(); }, 3200);
+  }
+})();
+</script>
+<script>
+/* --- Matrix rain: confined to the hero window, slow and dim.
+       Pauses off-screen; renders one still frame for reduced motion. --- */
+(function(){
+  var canvas = document.getElementById('matrixRain');
+  if(!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var chars = '01アイウエオカキクケコサシスセソタチツテト</>{}#%&';
+  var FS = 14, w = 0, h = 0, cols = 0, drops = [], raf = null, last = 0, visible = true;
+  function resize(){
+    var host = canvas.parentElement;
+    if(!host) return;
+    var r = host.getBoundingClientRect();
+    w = canvas.width = Math.max(1, Math.floor(r.width));
+    h = canvas.height = Math.max(1, Math.floor(r.height));
+    cols = Math.floor(w / FS);
+    drops = [];
+    for(var i = 0; i < cols; i++) drops[i] = Math.random() * -50;
+  }
+  function frame(now){
+    raf = requestAnimationFrame(frame);
+    if(now - last < 50) return; /* ~20fps: calm, not frantic */
+    last = now;
+    ctx.fillStyle = 'rgba(2,10,5,0.09)';
+    ctx.fillRect(0, 0, w, h);
+    ctx.font = FS + 'px "IBM Plex Mono",monospace';
+    for(var i = 0; i < cols; i++){
+      var ch = chars[Math.floor(Math.random() * chars.length)];
+      var x = i * FS, y = drops[i] * FS;
+      ctx.fillStyle = Math.random() < 0.02 ? '#c9ffdd' : 'rgba(46,224,111,0.72)';
+      ctx.fillText(ch, x, y);
+      if(y > h && Math.random() > 0.978) drops[i] = Math.random() * -20;
+      drops[i] += 0.45;
+    }
+  }
+  function start(){ if(!raf && !reduce && visible) raf = requestAnimationFrame(frame); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf = null; } }
+  resize();
+  if(reduce){
+    /* One quiet still frame — texture without motion */
+    ctx.font = FS + 'px "IBM Plex Mono",monospace';
+    for(var i = 0; i < cols; i++){
+      var len = 6 + Math.floor(Math.random() * 14);
+      for(var j = 0; j < len; j++){
+        ctx.fillStyle = 'rgba(46,224,111,' + (0.10 + 0.35 * (j / len)) + ')';
+        ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * FS, (drops[i] + j) * FS + 60);
+      }
+    }
+  } else {
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(entries){
+        visible = entries[0].isIntersecting;
+        if(visible) start(); else stop();
+      }, {threshold: 0.02}).observe(canvas);
+    }
+    start();
+    var rto = null;
+    window.addEventListener('resize', function(){ clearTimeout(rto); rto = setTimeout(resize, 200); });
   }
 })();
 </script>
